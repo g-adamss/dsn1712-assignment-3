@@ -5,9 +5,14 @@
 
 header{
     background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+
+header .wrapper{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    align-self: center;
 }
 
 body{
@@ -43,7 +48,7 @@ header nav ul li a{
 }
 
 #hero h1{
-    max-width: 40%;
+    max-width: 60%;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, .5);
     color: #fff;
@@ -65,107 +70,48 @@ align-items: flex-end;
 }
 
 #services {
+    text-align: center;
+}
+
+#services {
     background-color: #fafafa;
 }
 
-#services .wrapper{
+.button{
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-columns: repeat (3, 1fr);
-    gap: 40px;
-    justify-items: center;
-}
-
-
-#services article{
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#services article h3{
-font-size: 1.5rem;
-margin-bottom: auto 0;
-align-self: center;
-align-items: center;
-}
-
-#serivces article button{
-padding: 10px 20px;
-background-color: #000;
-border: 1px #000;
-}
-
-#services article :hover{
-    background-color: #fff;
-    color: #000;
-}
-
-#services .grid{
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
-#services .grid article {
-    background-color:#000;
+#services article{
+    background-color: #fff;
     padding: 1em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-#serivces .grid article h3{
-    margin-bottom: 0;
-}
-
-#services .grid article p{
-    padding-bottom: 0;
-}
-
-#services .grid a:link
-#services .grid a:visited{
-    padding: 8em 1em;
-    background-color:#fff ;
-    color:#000 ;
-    text-decoration: none;
-    border: 2px solid #000;
-    border-radius: 4px;
-    margin-top: auto;
-}
-
-#services .grid a:hover
-#services .grid a:focus{
-    background-color: #fff;
-    color: #000;
-}
-
-
-#services .btn{
+.button a:link,
+.button a:visited{
+    display: inline-block;
+    padding: .8em 1em;
     margin-top: auto;
     background-color: #000;
     color: #fff;
-    border: black;
-    text-align: center;
-    display: inline-block;
+    text-decoration: none;
+    border: 3px solid #000;
+    border-radius: 3px;
+    padding: 20px;
 }
 
-#services .btn{
-    background: #fff;
-    color: #000;
-}
+
 
 #work .wrapper{
 max-width: 940px;
 }
 
 #work {
-    align-items: center;
+    text-align: center;
 }
 
 
@@ -209,4 +155,6 @@ footer{
     background-color: #000;
     color: #fff;
     text-align: center;
+    padding: 20px;
+    margin-top: 25px;
 }
